@@ -1,0 +1,10 @@
+ZEVS_ARCHIVE=zevs_dir.tar.gz
+ZEVS_DIR=zevs_dir
+ZEVS_URL=https://klubnl.pl/zevs/zevs_dir.tar.gz
+
+FREQDETECT=zevs_freqs.txt
+FREQDETECT_SORTED=zevs_freqs_sort.txt
+ZEVS_MESSAGES=zevs_messages.txt
+ZEVS_MESSAGES_PERDAY=zevs_messages_perday.txt
+
+
