@@ -43,6 +43,8 @@ zevs_messages_perday.txt - number of ZEVS messages per day
 
 zevs_messages_perday.pdf - a plot of messages per day, based on zevs_messages_perday.txt
 
+zevs_activity.pdf - a plot of the number of minutes with 82Hz carrier active per day
+
 spectrograms/ - a directory with a spectrogram of all messages in zevs_messages.txt (including false decodes).
 
 
