@@ -36,6 +36,12 @@ sort -n < $FREQDETECT > $FREQDETECT_SORTED
 
 ./find_zevs_transmissions.py > $ZEVS_MESSAGES || error "error running find_zevs_transmissions.py"
 
+# analyze the number of 7 tone messages per day
 awk '/7 tones/ { A[$1]++ } END { for (i in A) print i " " A[i] }' $ZEVS_MESSAGES  | sort -n > $ZEVS_MESSAGES_PERDAY
+./plot.sh
+
+# analyze the number of 82Hz minutes per day
+./find_zevs_activity.py > $ZEVS_ACTIVITY || error "error running find_zevs_activity.py"
+./plot_activity.sh
 
 ./generate_all_spectrograms.sh
